@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <title>Checkout</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;400&family=Oswald:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">    </head>
+        <link rel="stylesheet" href="css/style.css">
+        <body>
+        <header>
+            <div class="logoHeadercontainer">
+                <a class="headerlogo" href="index.html">
+                    <img src="images/logo.jpg" alt="Harmattan coffee logo" srcset="">
+                </a>
+                <span id="headername">Harmattan Coffee Store</span>
+                <input class="searchinput" type="search" class="searchbox" placeholder="Search our store">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="navlink" href="#">Home</a></li>
+                    <li><a class="navlink" href="#">Blog</a></li>
+                    <li><a class="navlink" href="#">Our Coffees</a></li>
+                    <li><a class="navlink" href="#">Accessories</a></li>
+                    <li><a class="navlink" href="#">Gift</a></li>
+                    <li><a class="navlink" href="#">Find Us</a></li>
+                    <li><a class="navlink" href="#">Checkout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="welcomeimage">
+            <img src="images/adult-beans-beautiful-black-coffee-266755 (4).jpg" alt="coffee welcome image">
+        </div>
+        <div id="coffeeofthemonth">
+            <img src="images/coffee-beans-in-white-ceramic-mug-1420711.jpg" alt="coffe beans image" srcset="">
+        </div>
+
+        <section class="coffeedetails">
+            <header class="blockheader">
+                <span>Checkout</span>
+            </header>
+            <form id="mainForm" action="" method="post">
+                <fieldset class="box">
+                    <legend>Your details</legend>
+                    <div class="row">
+                        <div class="col-25">
+                            <label class="textLabel" for="firstNameInput">First Name</label>
+                        </div>
+                        <div class="75">
+                            <input id="firstNameInput" class="textInput" type="text" 
+                            name="firstName" maxlength="30" required="required" placeholder="first name" autofocus>
+                        </div>
+                        <div class="col-25">
+                            <label class="textLabel" for="lastNameInput">Last Name</label>
+                        </div>
+                        <div class="75">
+                            <input id="lastNameInput" class="textInput" type="text" name="lastName"
+                             size="10" maxlength="50" placeholder="last name" required="required">
+                        </div>
+                        <div class="col-25">
+                            <label for="emailInput" class="textLabel">Email</label>
+                        </div>
+                        <div class="75">
+                            <input type="email" name="email" id="emailInput" class="textInput" placeholder="email" required="required">
+                        </div>
+                        <div class="col-25">
+                            <label for="numberInput" class="textLabel">number</label>
+                        </div>
+                        <div class="75">
+                            <input type="text" name="number" id="numberInput" class="textInput" placeholder="Number" required="required">
+                        </div>
+                        <div class="col-25">
+                            <label for="zipInput" class="textLabel">Zip Number</label>
+                        </div>
+                        <div class="75">
+                            <input type="text" name="email" id="zipInput" class="textInput" placeholder="country code" required="required">
+                        </div>
+                        <div class="col-25">
+                            <label for="cityInput" class="textLabel">City</label>
+                        </div>
+                        <div class="75">
+                            <input type="text" name="city" id="cityInput" class="textInput" placeholder="city name" required="required">
+                        </div>
+                        <div class="col-25">
+                            <label for="countryInput" class="textLabel">Country</label>
+                        </div>
+                        <div class="75">
+                            <input type="text" name="country" id="countryInput" class="textInput" 
+                            pattern="[a-zA-Z]{3}" placeholder="country name" required="required">
+                        </div>
+                        <div class="col-25">
+                            <label for="numberInput" class="textLabel">Phone Number</label>
+                        </div>
+                        <div class="75">
+                            <input type="text" name="phone" id="numberInput" class="textInput" placeholder="phone number" required="required">
+                        </div>
+                        <div class="col-25">
+                            <label for="blogInput" class="textLabel">Blog</label>
+                        </div>
+                        <div class="75">
+                            <input type="url" name="blog" id="blogInput" placeholder="your url" class="textInput">
+                        </div>
+                        <div class="col-25">
+                            <label for="remarkInput" class="textLabel">Remarks</label>
+                        </div>
+                        <div class="75">
+                            <input type="text" name="remark" id="numberInput" placeholder="remarks" class="textInput">
+                        </div>
+                    </div>
+                </fieldset>
+                <br/>
+                <fieldset class="box">
+                    <legend>Your order</legend>
+                    <div class="25">
+                        <label for="deliveryDateInput" class="textlabel">Request deivery date</label>
+                    </div>
+                    <div class="75">
+                        <input type="date" name="birthDate" id="deliveryDateInput" class="textInput">
+                    </div>
+                    <div class="25">
+                        <label for="colorInput" class="textlabel">Wrapping papper color</label>
+                    </div>
+                    <div class="75">
+                        <input type="color" name="color" id="colorInput" class="textInput">
+                    </div>
+                    <div class="25">
+                        <label for="bowInput" class="textlabel">Wrapping papper color</label>
+                    </div>
+                    <div class="75">
+                        <input type="number" name="bow" id="bowInput" class="textInput" placeholder="number of bow" min="1" max="10">
+                    </div>
+                </fieldset>
+                <input type="submit" class="submitButton" value="Place order">
+            </form>
+        </section>
+    
+        
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Coffee Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;400&family=Oswald:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/videoPlayer.js"></script>
+    <body>
+    <header>
+        <div class="logoHeadercontainer">
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.jpg" alt="Harmattan coffee logo" srcset="">
+            </a>
+            <span id="headername">Harmattan Coffee Store</span>
+            <input class="searchinput" type="search" class="searchbox" placeholder="Search our store">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="navlink" href="#">Home</a></li>
+                <li><a class="navlink" href="#">Blog</a></li>
+                <li><a class="navlink" href="#">Our Coffees</a></li>
+                <li><a class="navlink" href="#">Accessories</a></li>
+                <li><a class="navlink" href="#">Gift</a></li>
+                <li><a class="navlink" href="#">Find Us</a></li>
+                <li><a class="navlink" href="#">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="welcomeimage">
+        <img src="images/adult-beans-beautiful-black-coffee-266755 (4).jpg" alt="coffee welcome image">
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/coffee-beans-in-white-ceramic-mug-1420711.jpg" alt="coffe beans image" srcset="">
+    </div>
+    <section id="coffeedetails">
+        <header class="blockheader">
+            <span>Coffee Details</span>
+        </header>
+        <div class="box">
+            <figure class="productarticlelargefigure">
+                <img id="coffee1" class="productarticlelargeimage" src="images/adult-beans-beautiful-black-coffee-266755 (1).jpg" alt="" srcset="">
+                <figcaption>Coffee 1</figcaption>
+            </figure>
+            <div class="productarticlecontent">
+                <p class="productarticledescription"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros mauris, 
+                    tincidunt sed lobortis ut, feugiat vel nisi. Curabitur bibendum placerat arcu ac cursus. Nam sed condimentum purus. 
+                    Mauris et egestas nisl, id feugiat dolor. Nunc blandit ligula maximus nisi consequat, vel porta neque maximus. Aenean ante orci, 
+                    consequat a mattis at, porta quis urna. Morbi finibus commodo nulla et ultrices. Nullam ut nibh vel sapien semper rhoncus non nec est. 
+                    Sed non interdum est. Nullam a erat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec sapien at arcu molestie malesuada. 
+                    Aenean bibendum sollicitudin ante, eget viverra dui gravida et.</p>
+                <p class="productarticleprice">$10</p>
+            </div>
+        </div>
+
+        <div>
+            <video class="coffeeVideo" id="videoPlayer" width="320" height="240" poster="images/coffee1.jpg" autoplay="autoplay">
+                <source src="video/video.mp4" type="video/mp4">
+                    Sadly your browser has no support for video format..
+            </video>
+
+            <div id="controls">
+                <!-- <div id="errorDiv" style="color: red;"></div> -->
+                <div id="slowerButton">Slower</div>
+                <div id="fastButton">Fast</div>
+                <div id="backButton">Rewind</div>
+                <div id="forwardButton">Foward</div>
+                <div id="playButton">Play</div>
+                <div id="muteButton">Mute</div>
+                <br/> <br/> <br/>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);
+        </script>
+        
+    </section>
+
+</body>
+</html>

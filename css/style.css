@@ -1,0 +1,406 @@
+body{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;}
+
+
+header{
+    font-weight: bold;
+}
+
+.headerlogo > img{
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+#mainheader{
+    height: 80px;
+}
+
+.searchinput{
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+#headername{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #603813;
+    padding: 15px;
+    margin: 20px 0;
+    text-shadow: 5px 5px 5px #5f2c17;
+}
+
+.navbar{
+    background: -webkit-linear-gradient(left, #603813, #341c05); /*for safari 5.1 to */
+    background: -o-linear-gradient(right,#603813, #341c05); /*for opera 11.1 to  12.0*/
+    background: -moz-linear-gradient(right,#603813, #341c05); /*for firfox 3.6 to 15*/
+    background: linear-gradient(to right,#603813, #341c05);
+    overflow:hidden;
+    margin: 5px auto;
+}
+
+.navbar > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar > ul > li{
+    float: left;
+}
+
+.navlink{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 10px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.coffeedetails{
+    float: left;
+    width: 100%;
+}
+
+#welcomeimage{
+    float: left;
+    width: 700px;
+}
+
+
+
+#coffeeofthemonth{
+    float: right;
+    width: 300px;
+}
+
+#welcometext{
+    float: left;
+    width: 70%;
+    font-size: 13px;
+    margin: 20px 0;
+    column-count: 2;
+    -webkit-column-count: 2;
+    text-align: justify;
+}
+
+#welcometext > header{
+    font-size: 20px;
+    color: #603813;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#welcometext > span{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+#event{
+    float: right;
+    width: 30%;
+    margin: 20px 0;
+}
+
+#event > header{
+    font-size: 15px;
+    color: #603813;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+
+#event > ul {
+    list-style: none;
+}
+
+#event > ul > li {
+    margin-bottom: 3px;
+}
+
+#bestsellers{
+    height: 100%;
+    width: 700px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#bestsellers > header{
+    font-size: 15px;
+    color: #603813;
+    font-weight: bold;
+}
+
+.backgroundgradient{
+    background: -webkit-linear-gradient(left, #603813, #341c05); /*for safari 5.1 to */
+    background: -o-linear-gradient(right,#603813, #341c05); /*for opera 11.1 to  12.0*/
+    background: -moz-linear-gradient(right,#603813, #341c05); /*for firfox 3.6 to 15*/
+    background: linear-gradient(to right,#603813, #341c05);
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.productarticlename > a{
+    color: #603813;
+}
+
+.productarticleprice{
+    color: #186A1B;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.addtocartbutton{
+    background: #603813;
+    cursor: pointer;
+    padding: 4px 12px;
+    border: 1px solid #381f09;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+    color: #f3f3f3;
+    font-size: 0.8rem;
+    width: 80px;
+}
+
+.addtocartbutton:hover, .addtocartbutton:focus{
+    background-color: #51240a;
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+}
+
+.productarticle{
+    float: left;
+    width: 33.33%;
+    margin: 10px 0;
+    /* padding: 5px; */
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.productarticle img{
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    background-color: #5c5045;
+    margin: 20px 0 20px;
+    padding: 5px;
+}
+
+.smalltext{
+    box-sizing: border-box;
+}
+
+
+/* checkout style */
+#coffeedetails{
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=email], input[type=url], 
+input[type=date], input[type="number"]{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #603813;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+  /* all coffees styly */
+#allcoffees{
+    height: 100%;
+    width: 80%;
+    margin: 20px 10px 20px 0;
+    float: left;
+}
+
+#allcoffees > header{
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.dragAndDropIems{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+.dragAndDropItems > header{
+    margin: 20px 0 10px;
+    font-size: 20px;
+    color: #603813;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.productarticlewide{
+    width: 700px;
+    margin: 20px 0 20px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productarticlewide img{
+    width: 100px;
+    height: 100px;
+}
+
+.productarticlewidename{
+    color: #603813;
+}
+
+.productarticlewidecontent{
+    margin-left: 20px;
+
+}
+
+/* find us page style */
+.mapStore{
+    margin: 30px 0;
+    clear: both;
+}
+
+.mapStore > header{
+    padding: 20px 0;
+    font-size: 20px;
+    color: #603813;
+    font-weight: bold;
+
+}
+
+/* coffee details style */
+#coffeedetails{
+    clear: both;
+}
+
+#coffeedetails > header{
+    font-size: 20px;
+    color: #603813;
+    font-weight: bold;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.productarticlelargefigure{
+    width: 20%;
+}
+
+.productarticlelargefigure > img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.productarticlecontent{
+    width: 80%;
+    text-align: justify;
+}
+
+#controls > div{
+    cursor: pointer;
+    text-align: center;
+    padding: 2px 2px;
+    font-size: 10px;
+    background-color: #ccc;
+    color: #333333;
+    border: 1px solid #333333;
+    margin: 1px;
+    width: 40px;
+    display: inline-block;
+}
+
+#controls >div:hover{
+    background-color: aqua;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer > small{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    
+}

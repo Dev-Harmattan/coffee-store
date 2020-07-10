@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>All Coffees</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;400&family=Oswald:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/dragAndDrop.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logoHeadercontainer">
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.jpg" alt="Harmattan coffee logo" srcset="">
+            </a>
+            <span id="headername">Harmattan Coffee Store</span>
+            <input class="searchinput" type="search" class="searchbox" placeholder="Search our store">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="navlink" href="#">Home</a></li>
+                <li><a class="navlink" href="#">Blog</a></li>
+                <li><a class="navlink" href="#">Our Coffees</a></li>
+                <li><a class="navlink" href="#">Accessories</a></li>
+                <li><a class="navlink" href="#">Gift</a></li>
+                <li><a class="navlink" href="#">Find Us</a></li>
+                <li><a class="navlink" href="#">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="welcomeimage">
+        <img src="images/adult-beans-beautiful-black-coffee-266755 (4).jpg" alt="coffee welcome image">
+    </div>
+    
+    <section id="allcoffees">
+        <header class="blockhead">
+             <span>Eppresso Coffee Beans</span>
+        </header>
+        <div class="row">
+            <article class="productarticlewide" id="coffee-1" data-price="10.00">
+                <img id="coffee" class="productarticlewidethumbnail" src="images/coffee1.jpg" alt="coffee image">
+                <div class="productarticlewidecontent">
+                    <header>
+                        <span class="productarticlewidename">Coffee 1</span>
+                    </header>
+                    <p class="productarticlewidedescription">Sed non interdum est. Nullam a erat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec sapien at arcu molestie malesuada.
+                         Aenean bibendum sollicitudin ante, eget viverra dui gravida et.</p>
+                    <p class="productarticleprice">$10</p>
+                </div>
+            </article>
+            <article class="productarticlewide" id="coffee-2" data-price="15.00">
+                <img id="coffee" class="productarticlewidethumbnail" src="images/coffee2.jpg" alt="coffee image">
+                <div class="productarticlewidecontent">
+                    <header>
+                        <span class="productarticlewidename">Coffee 2</span>
+                    </header>
+                    <p class="productarticlewidedescription">Sed non interdum est. Nullam a erat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec sapien at arcu molestie malesuada.
+                         Aenean bibendum sollicitudin ante, eget viverra dui gravida et.</p>
+                         <p class="productarticleprice">$10</p>
+                </div>
+            </article>
+            <article class="productarticlewide" id="coffee-3" data-price="20.00" draggable="true">
+                <img id="coffee" class="productarticlewidethumbnail" src="images/coffee3.jpg" alt="coffee image">
+                <div class="productarticlewidecontent">
+                    <header>
+                        <span class="productarticlewidename">Coffee 3</span>
+                    </header>
+                    <p class="productarticlewidedescription">Sed non interdum est. Nullam a erat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec sapien at arcu molestie malesuada.
+                         Aenean bibendum sollicitudin ante, eget viverra dui gravida et.</p>
+                         <p class="productarticleprice">$10</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <div class="dragAndDropItems" id="shoppingCart">
+        <header>Shopping Cart</header>
+        <ul></ul>        
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", dragAndDropHandler, false);
+    </script>
+</body>
+</html>
